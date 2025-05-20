@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark mode background */
+            color: #e8eaed; /* Light text for dark mode */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            color: #8ab4f8; /* Link color for dark mode */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        .header a {
+            color: #e8eaed;
+            font-size: 13px;
+        }
+
+        .header .profile-pic {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #333; /* Fallback for black */
+            object-fit: cover;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px; /* Space for the footer */
+        }
+
+        .logo {
+            font-size: 80px;
+            font-weight: bold;
+            color: #e8eaed;
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 580px;
+            max-width: 90%;
+            background-color: #303134; /* Darker background for search bar */
+            border-radius: 24px;
+            border: 1px solid #5f6368;
+            padding: 10px 15px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-container input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 16px;
+            color: #e8eaed;
+            padding: 0 10px;
+        }
+
+        .search-container .icon {
+            font-size: 20px;
+            color: #9aa0a6;
+            cursor: pointer;
+        }
+
+        .search-container .microphone-icon {
+            margin-left: 10px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .buttons button {
+            background-color: #303134;
+            color: #e8eaed;
+            border: 1px solid #303134;
+            border-radius: 4px;
+            padding: 10px 15px;
+            margin: 0 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            border-color: #5f6368;
+        }
+
+        .promo-text {
+            color: #ea4335; /* Red color for promo text */
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        .language-options {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #bdc1c6;
+        }
+
+        .language-options a {
+            color: #8ab4f8;
+            margin: 0 3px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #171717; /* Even darker footer */
+            color: #bdc1c6;
+            font-size: 13px;
+            padding: 15px 20px;
+            border-top: 1px solid #3c4043;
+        }
+
+        .footer-top {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #3c4043;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links div a {
+            color: #bdc1c6;
+            margin-right: 25px;
+        }
+
+        .footer-links div a:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#">Gmail</a>
+        <a href="#">Imágenes</a>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Profile" class="profile-pic">
+        </header>
+
+    <main class="main-content">
+        <div class="logo">Google</div>
+        <div class="search-container">
+            <span class="icon">&#128269;</span> <input type="text" placeholder="">
+            <span class="icon microphone-icon">&#127897;</span> </div>
+        <div class="buttons">
+            <button>Buscar con Google</button>
+            <button>Voy a tener suerte</button>
+        </div>
+        <p class="promo-text">¡No te lo pierdas! Las innovaciones de IA más recientes en Google I/O 2025</p>
+        <div class="language-options">
+            Google disponible en:
+            <a href="#">Español (Latinoamérica)</a>
+            <a href="#">Quechua</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            Perú
+        </div>
+        <div class="footer-links">
+            <div>
+                <a href="#">Sobre Google</a>
+                <a href="#">Publicidad</a>
+                <a href="#">Negocios</a>
+                <a href="#">Cómo funciona la Búsqueda</a>
+            </div>
+            <div>
+                <a href="#">Privacidad</a>
+                <a href="#">Condiciones</a>
+                <a href="#">Configuración</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
